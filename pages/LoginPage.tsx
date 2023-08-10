@@ -2,7 +2,7 @@
 // @mui
 import { styled } from "@mui/material/styles"
 import { Link, Container, Typography, Divider, Stack, Button } from "@mui/material"
-import LoginForm from "../section/auth/login/LoginForm"
+import LoginForm from "../sections/auth/login/LoginForm"
 // hooks
 // import useResponsive from "../hooks/useResponsive"
 // components
