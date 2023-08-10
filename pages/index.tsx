@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import App from "./App"
 import { useSession, signIn, signOut } from "next-auth/react"
 import LoginPage from "./LoginPage"
+import  DashboardAppPage  from "./DashboardAppPage"
 
 const IndexPage = () => {
   const { data: session, status } = useSession()
@@ -15,16 +16,16 @@ const IndexPage = () => {
   if (status === "authenticated") {
     return (
       <>
-        <p>Signed in as {userEmail}</p>
-        <button onClick={() => signOut()}>Sign out</button>
+        {/* <button onClick={() => signOut()}>Sign out</button> */}
 
-        <Layout title="Home | Next.js + TypeScript Example">
+        {/* <Layout title="Home | Next.js + TypeScript Example">
           <h1>Hello Next.js 👋</h1>
           <App />
           <p>
             <Link href="/about">About</Link>
           </p>
-        </Layout>
+        </Layout> */}
+        <DashboardAppPage />
       </>
     )
   }
